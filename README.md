@@ -9,4 +9,9 @@ Tạo thư mục dự án và các thư mục con
 tạo file docker-compose.yml 
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8f3166d6-3841-4be8-b5e0-d4bb7a8f2490" />
+<img width="1920" height="341" alt="image" src="https://github.com/user-attachments/assets/fd73051d-6661-466e-8abe-71b5a5440a88" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/879e47ac-44d9-438a-affc-d946cd8efdf2" />
 CHẠY DOCKER bằng lệnh "docker-compose down" ở đây em sử dụng cổng 8081 thay cho 8080 
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f9e56734-ca55-420e-a71e-3bab1243557a" />
+thêm tên miền 127.0.0.1 dangphuongnam.com
