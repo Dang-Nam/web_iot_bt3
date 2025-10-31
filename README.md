@@ -50,3 +50,7 @@ dunction Format JSON
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f63be22d-c48e-4e15-a56b-5f64b39132db" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8e1e57cf-23a0-485a-8d3f-4f3b80806c7c" />
 2 node http response 200 và 401
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d66a78ef-6552-4b24-bf20-0f529c186776" />
+nối các node 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fe942ab2-fc26-4b25-9df2-101e2a8a25b8" />
+RA 404 → NGINX CHƯA CHUYỂN YÊU CẦU TỚI NODE-RED!
