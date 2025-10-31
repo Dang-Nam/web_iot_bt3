@@ -22,3 +22,8 @@ tạo file index.html + test nhẹ
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6e9b4907-a8e7-49e2-bce7-e0e466d4f90c" />
 TẠO DB + BẢNG MỚI
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cd1c72ad-e16e-494f-aa5a-dbfe4b31cedf" />
+mở NODE RED
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/32f607ca-4d12-4e39-b865-1262259a9623" />
+CÀI NODE node-red dùng trong bài 
