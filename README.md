@@ -17,5 +17,7 @@ CHẠY DOCKER bằng lệnh "docker-compose down" ở đây em sử dụng cổn
 thêm tên miền 127.0.0.1 dangphuongnam.com
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/68f37e8e-3ad1-4527-878b-b80dadcc79be" />
-tạo file index.html
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f1e75e52-ef2c-4426-8333-05da8bef09da" />
+
+tạo file index.html + test nhẹ
 
