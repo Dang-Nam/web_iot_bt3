@@ -1,0 +1,12 @@
+# web_iot_bt3
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8ffddff7-f7fc-4e8e-a21b-3431039395f7" />
+Tạo thư mục dự án và các thư mục con
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/20ae66a2-64b2-4fe7-b172-8bcd38cf1a17" />
+<img width="1037" height="448" alt="image" src="https://github.com/user-attachments/assets/2fe1c250-2943-4e3e-b7a6-f3e00108e28b" />
+tạo file docker-compose.yml 
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8f3166d6-3841-4be8-b5e0-d4bb7a8f2490" />
+CHẠY DOCKER bằng lệnh "docker-compose down" ở đây em sử dụng cổng 8081 thay cho 8080 
