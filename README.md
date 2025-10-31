@@ -1,4 +1,4 @@
-# web_iot_bt3
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e2d5e015-1a86-4b76-9d2f-08be011f5480" /># web_iot_bt3
 
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8ffddff7-f7fc-4e8e-a21b-3431039395f7" />
@@ -27,3 +27,11 @@ TẠO DB + BẢNG MỚI
 mở NODE RED
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/32f607ca-4d12-4e39-b865-1262259a9623" />
 CÀI NODE node-red dùng trong bài 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3a0664e7-d7c6-4e08-9795-a429020a93d9" />
+POST /api/login
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/51d56a97-2fe1-40a4-b3ff-f2283c8a5b6c" />
+function Check nam/123
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ebf218d7-4c93-452c-88e6-8ba02390815a" />
+Output 1 (thành công)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bf1e6a43-4289-4d8b-acb3-26b5c40d7ed6" />
+Output 2 (thất bại)
