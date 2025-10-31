@@ -27,6 +27,8 @@ TẠO DB + BẢNG MỚI
 mở NODE RED
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/32f607ca-4d12-4e39-b865-1262259a9623" />
 CÀI NODE node-red dùng trong bài 
+
+TẠO API LOGIN
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3a0664e7-d7c6-4e08-9795-a429020a93d9" />
 POST /api/login
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/51d56a97-2fe1-40a4-b3ff-f2283c8a5b6c" />
@@ -35,3 +37,16 @@ function Check nam/123
 Output 1 (thành công)
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bf1e6a43-4289-4d8b-acb3-26b5c40d7ed6" />
 Output 2 (thất bại)
+
+TẠO API LẤY DỮ LIỆU CẢM BIẾN
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2a210204-7ab7-4715-b4c9-bfdea252d02b" />
+httpin GET /api/sensors
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/922d9af1-110d-4a04-86fd-67ada09f36e2" />
+function Check Token
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b0335eeb-2255-4226-9a94-41b99f0e4f4c" />
+mysql_node
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/494ca557-41df-4e09-a0b7-836c9c2c306e" />
+dunction Format JSON
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f63be22d-c48e-4e15-a56b-5f64b39132db" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8e1e57cf-23a0-485a-8d3f-4f3b80806c7c" />
+2 node http response 200 và 401
