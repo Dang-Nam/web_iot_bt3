@@ -54,3 +54,7 @@ dunction Format JSON
 nối các node 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fe942ab2-fc26-4b25-9df2-101e2a8a25b8" />
 RA 404 → NGINX CHƯA CHUYỂN YÊU CẦU TỚI NODE-RED!
+
+
+<img width="1390" height="147" alt="image" src="https://github.com/user-attachments/assets/232ecb68-178b-4a70-bd25-3ff25ba67263" />
+test login
