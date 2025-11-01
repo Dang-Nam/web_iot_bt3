@@ -91,3 +91,5 @@ QS18UAphS750fGRR-tAMhpj2kilDmoyF2_5YjRHHYJXqJguqRNEWcHd0zKm9ko_RNL8SSZGMuaSvAAXg
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d77a3e91-40a8-4a0e-a7d6-7d34cbf93be3" />
 sửa InfluxDB
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ff024e45-f912-4b7a-93e8-61e7f42c1593" />
+SỬA DATASOURCE → DÙNG TOKEN
