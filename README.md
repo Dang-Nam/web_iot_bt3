@@ -58,3 +58,10 @@ RA 404 → NGINX CHƯA CHUYỂN YÊU CẦU TỚI NODE-RED!
 
 <img width="1390" height="147" alt="image" src="https://github.com/user-attachments/assets/232ecb68-178b-4a70-bd25-3ff25ba67263" />
 test login
+<img width="1407" height="144" alt="image" src="https://github.com/user-attachments/assets/eae0c4e6-a64a-4eff-9064-3f82454edaeb" />
+test sensers
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/575b7200-b5e8-4cab-a66b-2ea9e4c482e3" />
+TẠO DATASOURCE
+
+NODE-RED + INFLUXDB + GRAFANA
