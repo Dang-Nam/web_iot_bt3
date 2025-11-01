@@ -79,3 +79,15 @@ Write to InfluxDB
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fd0130e1-2be0-4c08-9fc1-63a6465ff407" />
 
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a150cd2b-a761-46aa-9194-8381adb0b244" />
+TẠO USER + TOKEN TRONG INFLUXDB
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/150c4a12-8ed4-41b7-9fc0-80b1720bd927" />
+tạo mới bucket iot_data
+
+token: 
+QS18UAphS750fGRR-tAMhpj2kilDmoyF2_5YjRHHYJXqJguqRNEWcHd0zKm9ko_RNL8SSZGMuaSvAAXgUFcg-Q==
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d77a3e91-40a8-4a0e-a7d6-7d34cbf93be3" />
+sửa InfluxDB
