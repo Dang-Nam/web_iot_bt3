@@ -76,3 +76,6 @@ Lấy Sensors
 Format Influx
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/eebd6757-49a4-40fb-a974-b269c52cfb78" />
 Write to InfluxDB
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fd0130e1-2be0-4c08-9fc1-63a6465ff407" />
+
