@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e2d5e015-1a86-4b76-9d2f-08be011f5480" /># web_iot_bt3
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ad82870d-6850-4ad0-beb6-6020dc0a0d92" /><img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e2d5e015-1a86-4b76-9d2f-08be011f5480" /># web_iot_bt3
 
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8ffddff7-f7fc-4e8e-a21b-3431039395f7" />
@@ -65,3 +65,14 @@ test sensers
 TẠO DATASOURCE
 
 NODE-RED + INFLUXDB + GRAFANA
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/aed369ca-1926-4eee-bc72-c856166d1eb2" />
+InfluxDB
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7639d2e4-eb26-4fc4-ab4f-0586da4c0860" />
+Every 10s
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/95ece487-324d-45b9-8bd3-2e522059dbc0" />
+Lấy Sensors
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d7cce230-cdaf-4702-a570-e20b6a392cdb" />
+Format Influx
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/eebd6757-49a4-40fb-a974-b269c52cfb78" />
+Write to InfluxDB
