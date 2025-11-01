@@ -93,3 +93,5 @@ QS18UAphS750fGRR-tAMhpj2kilDmoyF2_5YjRHHYJXqJguqRNEWcHd0zKm9ko_RNL8SSZGMuaSvAAXg
 sửa InfluxDB
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ff024e45-f912-4b7a-93e8-61e7f42c1593" />
 SỬA DATASOURCE → DÙNG TOKEN
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/62b2be21-1426-4be3-ab4d-9172732bb905" />
+save and test
