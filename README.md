@@ -99,3 +99,8 @@ save and test
 
  <img width="1918" height="167" alt="image" src="https://github.com/user-attachments/assets/12f478d1-7c41-487f-b309-842e7b3b2afa" />
 test lại api
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/dc172f97-580d-4b0b-b9ef-2990d6f53816" />
+giao diện đăng nhập
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/41ef72bb-268c-401e-82eb-f865fd35607a" />
+giao diện báo senser, đg tạm ngắt kết nối biểu đồ grafana, để test senser tĩnh trc ạ
