@@ -1,4 +1,16 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ad82870d-6850-4ad0-beb6-6020dc0a0d92" /><img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e2d5e015-1a86-4b76-9d2f-08be011f5480" /># web_iot_bt3
+# web_iot_bt3
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/253889ed-be3b-4ca6-970e-1ee126fcfb5b" />
+tải DOCKER DESKTOP
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/809d267d-4f23-4524-9974-32e13909e757" />
+cài đặt DOCKER DESKTOP
+<img width="1606" height="961" alt="image" src="https://github.com/user-attachments/assets/f33c691c-8d8c-4a7c-9a47-514c99a7a872" />
+chưa cập nhật WSL2
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e957ccef-564e-4baf-ada7-096db45186d5" />
+CHẠY LỆNH CẬP NHẬT WSL
+<img width="1366" height="870" alt="image" src="https://github.com/user-attachments/assets/1d35ebfa-0712-4abb-878c-2a290c4bbebe" />
+đã oke
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ad82870d-6850-4ad0-beb6-6020dc0a0d92" /><img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e2d5e015-1a86-4b76-9d2f-08be011f5480" />
 
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8ffddff7-f7fc-4e8e-a21b-3431039395f7" />
