@@ -10,8 +10,6 @@ CHẠY LỆNH CẬP NHẬT WSL
 <img width="1366" height="870" alt="image" src="https://github.com/user-attachments/assets/1d35ebfa-0712-4abb-878c-2a290c4bbebe" />
 đã oke
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ad82870d-6850-4ad0-beb6-6020dc0a0d92" /><img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e2d5e015-1a86-4b76-9d2f-08be011f5480" />
-
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8ffddff7-f7fc-4e8e-a21b-3431039395f7" />
 Tạo thư mục dự án và các thư mục con
