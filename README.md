@@ -1,4 +1,9 @@
 # web_iot_bt3
+# Lựa chọn đề bàiWeb IOT: Giám sát dữ liệu IOT. 
+# Đặng Phương Nam-K215480106036
+
+### Tiến trình làm bài
+### 1. Cài đặt môi trường: enable wsl: cài đặt docker desktop
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/253889ed-be3b-4ca6-970e-1ee126fcfb5b" />
 tải DOCKER DESKTOP
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/809d267d-4f23-4524-9974-32e13909e757" />
