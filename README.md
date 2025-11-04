@@ -15,7 +15,7 @@ CHẠY LỆNH CẬP NHẬT WSL
 <img width="1366" height="870" alt="image" src="https://github.com/user-attachments/assets/1d35ebfa-0712-4abb-878c-2a290c4bbebe" />
 đã oke
 
-### Sử dụng 1 file docker-compose.yml để cài đặt các docker container
+### 2. Sử dụng 1 file docker-compose.yml để cài đặt các docker container
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8ffddff7-f7fc-4e8e-a21b-3431039395f7" />
 Tạo thư mục dự án và các thư mục con
