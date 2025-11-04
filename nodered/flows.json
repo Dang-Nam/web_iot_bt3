@@ -1,0 +1,259 @@
+[
+    {
+        "id": "1b16086983572a2a",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "mariadb_config",
+        "type": "MySQLdatabase",
+        "name": "MariaDB Config",
+        "host": "mariadb",
+        "port": "3306",
+        "db": "iot_db",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "fb3de7461eb33a90",
+        "type": "MySQLdatabase",
+        "host": "mariadb",
+        "port": "3306",
+        "db": "iot_db",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "8d6c67c6db817d73",
+        "type": "MySQLdatabase",
+        "host": "mariadb",
+        "port": "3306",
+        "db": "iot_db",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "8f3c6e08face5777",
+        "type": "MySQL-Server-Connector",
+        "name": "MariaDB Config",
+        "host": "mariadb",
+        "port": "3306",
+        "user": "root",
+        "password": "rootpass",
+        "tls": false,
+        "database": "iot_db"
+    },
+    {
+        "id": "02240cc9813741d4",
+        "type": "http in",
+        "z": "1b16086983572a2a",
+        "name": "POST /api/login",
+        "url": "/api/login",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 200,
+        "y": 180,
+        "wires": [
+            [
+                "f56967ea88d45937"
+            ]
+        ]
+    },
+    {
+        "id": "163730b3620d13d6",
+        "type": "function",
+        "z": "1b16086983572a2a",
+        "name": "Check mật khẩu + Tạo token",
+        "func": "const bcrypt = require('bcryptjs');\n\nif (!msg.payload || msg.payload.length === 0) {\n    msg.payload = { error: 'User không tồn tại' };\n    msg.statusCode = 401;\n    return [null, msg];\n}\n\nconst hashed = msg.payload[0].password;\nconst plain = msg.req.body.password; // Lấy từ req gốc\n\nconst match = bcrypt.compareSync(plain, hashed);\n\nif (match) {\n    msg.payload = { \n        token: 'iot-jwt-nam-2025', \n        username: msg.req.body.username \n    };\n    return [msg, null];\n} else {\n    msg.payload = { error: 'Sai mật khẩu' };\n    msg.statusCode = 401;\n    return [null, msg];\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 180,
+        "wires": [
+            [
+                "8a4bfc17e1fbec19",
+                "52b9be72781821dd"
+            ]
+        ]
+    },
+    {
+        "id": "8a4bfc17e1fbec19",
+        "type": "http response",
+        "z": "1b16086983572a2a",
+        "name": "Output 1 (thành công)",
+        "statusCode": "",
+        "headers": {},
+        "x": 720,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "52b9be72781821dd",
+        "type": "http response",
+        "z": "1b16086983572a2a",
+        "name": "Output 2 (thất bại)",
+        "statusCode": "401",
+        "headers": {},
+        "x": 690,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "bc63962278cada48",
+        "type": "http in",
+        "z": "1b16086983572a2a",
+        "name": "GET /api/sensors ",
+        "url": "/api/sensors",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 200,
+        "y": 300,
+        "wires": [
+            [
+                "cd68498d263bda15"
+            ]
+        ]
+    },
+    {
+        "id": "cd68498d263bda15",
+        "type": "function",
+        "z": "1b16086983572a2a",
+        "name": "Check Token",
+        "func": "const auth = msg.req.headers.authorization;\n\nif (auth === \"Bearer iot-jwt-nam-2025\") {\n    return [msg, null]; // → Output 1 (hợp lệ)\n} else {\n    msg.statusCode = 401;\n    msg.payload = { error: \"Unauthorized\" };\n    return [null, msg]; // → Output 2 (sai token)\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 300,
+        "wires": [
+            [
+                "4c3d52c2062a5c9d"
+            ]
+        ]
+    },
+    {
+        "id": "73c35b42d2057290",
+        "type": "function",
+        "z": "1b16086983572a2a",
+        "name": "Format JSON",
+        "func": "msg.payload = {\n    success: true,\n    count: msg.payload.length,\n    data: msg.payload.map(row => ({\n        id: row.id,\n        name: row.name,\n        value: parseFloat(row.value),\n        unit: row.unit,\n        time: row.updated_at ? row.updated_at.toISOString() : null\n    }))\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 340,
+        "wires": [
+            [
+                "40abce92b04eae8a"
+            ]
+        ]
+    },
+    {
+        "id": "40abce92b04eae8a",
+        "type": "http response",
+        "z": "1b16086983572a2a",
+        "name": "ok",
+        "statusCode": "200",
+        "headers": {},
+        "x": 950,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "9a6e08e0cc684ffd",
+        "type": "mysql",
+        "z": "1b16086983572a2a",
+        "mydb": "mariadb_config",
+        "name": "",
+        "x": 700,
+        "y": 260,
+        "wires": [
+            [
+                "73c35b42d2057290"
+            ]
+        ]
+    },
+    {
+        "id": "4c3d52c2062a5c9d",
+        "type": "function",
+        "z": "1b16086983572a2a",
+        "name": "function 1",
+        "func": "msg.topic = \"SELECT * FROM sensors\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 260,
+        "wires": [
+            [
+                "9a6e08e0cc684ffd"
+            ]
+        ]
+    },
+    {
+        "id": "6231916dafc7dc05",
+        "type": "mysql",
+        "z": "1b16086983572a2a",
+        "mydb": "mariadb_config",
+        "name": "",
+        "x": 580,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f56967ea88d45937",
+        "type": "function",
+        "z": "1b16086983572a2a",
+        "name": "Lấy user/pass",
+        "func": "msg.topic = \"SELECT password FROM users WHERE username = ?\";\nmsg.payload = [msg.req.body.username]; // Gửi username dưới dạng mảng\ndelete msg.req; // Xóa req để tránh lỗi\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 120,
+        "wires": [
+            [
+                "76d74ecafa926b1a"
+            ]
+        ]
+    },
+    {
+        "id": "76d74ecafa926b1a",
+        "type": "mysql",
+        "z": "1b16086983572a2a",
+        "mydb": "mariadb_config",
+        "name": "Tìm user",
+        "x": 460,
+        "y": 60,
+        "wires": [
+            [
+                "163730b3620d13d6"
+            ]
+        ]
+    }
+]

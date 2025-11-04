@@ -1,0 +1,91 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.19.5
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/.npmrc
+5 silly config load:file:/usr/src/node-red/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm remove node-red-contrib-mssql
+8 verbose argv "remove" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "node-red-contrib-mssql"
+9 verbose logfile logs-max:10 dir:/data/.npm/_logs/2025-10-31T11_56_55_816Z-
+10 verbose logfile /data/.npm/_logs/2025-10-31T11_56_55_816Z-debug-0.log
+11 silly packumentCache heap:1939603456 maxSize:484900864 maxEntrySize:242450432
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 silly reify mark retired [ '/data/node_modules/asap' ]
+15 silly reify mark retired [ '/data/node_modules/babel-runtime' ]
+16 silly reify mark retired [ '/data/node_modules/big-number' ]
+17 silly reify mark retired [ '/data/node_modules/bl' ]
+18 silly reify mark retired [ '/data/node_modules/core-js' ]
+19 silly reify mark retired [ '/data/node_modules/core-util-is' ]
+20 silly reify mark retired [ '/data/node_modules/generic-pool' ]
+21 silly reify mark retired [ '/data/node_modules/inherits' ]
+22 silly reify mark retired [ '/data/node_modules/isarray' ]
+23 silly reify mark retired [ '/data/node_modules/mssql', '/data/node_modules/.bin/mssql' ]
+24 silly reify mark retired [ '/data/node_modules/mustache', '/data/node_modules/.bin/mustache' ]
+25 silly reify mark retired [ '/data/node_modules/node-red-contrib-mssql' ]
+26 silly reify mark retired [ '/data/node_modules/process-nextick-args' ]
+27 silly reify mark retired [ '/data/node_modules/promise' ]
+28 silly reify mark retired [ '/data/node_modules/readable-stream' ]
+29 silly reify mark retired [ '/data/node_modules/safe-buffer' ]
+30 silly reify mark retired [ '/data/node_modules/semver', '/data/node_modules/.bin/semver' ]
+31 silly reify mark retired [ '/data/node_modules/sprintf' ]
+32 silly reify mark retired [ '/data/node_modules/string_decoder' ]
+33 silly reify mark retired [ '/data/node_modules/tedious' ]
+34 silly reify mark retired [ '/data/node_modules/util-deprecate' ]
+35 silly reify moves {
+35 silly reify   '/data/node_modules/asap': '/data/node_modules/.asap-diOSgpHO',
+35 silly reify   '/data/node_modules/babel-runtime': '/data/node_modules/.babel-runtime-4QCNum8l',
+35 silly reify   '/data/node_modules/big-number': '/data/node_modules/.big-number-zQiHvdgK',
+35 silly reify   '/data/node_modules/bl': '/data/node_modules/.bl-PfU8Qu11',
+35 silly reify   '/data/node_modules/core-js': '/data/node_modules/.core-js-uC7tynRy',
+35 silly reify   '/data/node_modules/core-util-is': '/data/node_modules/.core-util-is-9IULv6p7',
+35 silly reify   '/data/node_modules/generic-pool': '/data/node_modules/.generic-pool-H6xFM402',
+35 silly reify   '/data/node_modules/inherits': '/data/node_modules/.inherits-IFktovJP',
+35 silly reify   '/data/node_modules/isarray': '/data/node_modules/.isarray-Qb0SFsNw',
+35 silly reify   '/data/node_modules/mssql': '/data/node_modules/.mssql-BFIopVUn',
+35 silly reify   '/data/node_modules/.bin/mssql': '/data/node_modules/.bin/.mssql-TmSXqGMT',
+35 silly reify   '/data/node_modules/mustache': '/data/node_modules/.mustache-ROQ2oY93',
+35 silly reify   '/data/node_modules/.bin/mustache': '/data/node_modules/.bin/.mustache-TTkgdA98',
+35 silly reify   '/data/node_modules/node-red-contrib-mssql': '/data/node_modules/.node-red-contrib-mssql-2imJalFU',
+35 silly reify   '/data/node_modules/process-nextick-args': '/data/node_modules/.process-nextick-args-nOZd1AjK',
+35 silly reify   '/data/node_modules/promise': '/data/node_modules/.promise-gGImx9S5',
+35 silly reify   '/data/node_modules/readable-stream': '/data/node_modules/.readable-stream-VXKeHCl7',
+35 silly reify   '/data/node_modules/safe-buffer': '/data/node_modules/.safe-buffer-RhdIW9jy',
+35 silly reify   '/data/node_modules/semver': '/data/node_modules/.semver-yb9qAHPh',
+35 silly reify   '/data/node_modules/.bin/semver': '/data/node_modules/.bin/.semver-A9Nz3QEQ',
+35 silly reify   '/data/node_modules/sprintf': '/data/node_modules/.sprintf-Jo2VTciZ',
+35 silly reify   '/data/node_modules/string_decoder': '/data/node_modules/.string_decoder-3xV3GvlK',
+35 silly reify   '/data/node_modules/tedious': '/data/node_modules/.tedious-agsSpbqE',
+35 silly reify   '/data/node_modules/util-deprecate': '/data/node_modules/.util-deprecate-vvLRni8j'
+35 silly reify }
+36 silly REMOVE node_modules/util-deprecate
+37 silly REMOVE node_modules/tedious
+38 silly REMOVE node_modules/tedious/node_modules/iconv-lite
+39 silly REMOVE node_modules/string_decoder
+40 silly REMOVE node_modules/string_decoder/node_modules/safe-buffer
+41 silly REMOVE node_modules/sprintf
+42 silly REMOVE node_modules/semver
+43 silly REMOVE node_modules/safe-buffer
+44 silly REMOVE node_modules/readable-stream
+45 silly REMOVE node_modules/readable-stream/node_modules/safe-buffer
+46 silly REMOVE node_modules/promise
+47 silly REMOVE node_modules/process-nextick-args
+48 silly REMOVE node_modules/node-red-contrib-mssql
+49 silly REMOVE node_modules/mustache
+50 silly REMOVE node_modules/mssql
+51 silly REMOVE node_modules/isarray
+52 silly REMOVE node_modules/inherits
+53 silly REMOVE node_modules/generic-pool
+54 silly REMOVE node_modules/core-util-is
+55 silly REMOVE node_modules/core-js
+56 silly REMOVE node_modules/bl
+57 silly REMOVE node_modules/big-number
+58 silly REMOVE node_modules/babel-runtime
+59 silly REMOVE node_modules/asap
+60 verbose cwd /data
+61 verbose os Linux 6.6.87.2-microsoft-standard-WSL2
+62 verbose node v20.19.5
+63 verbose npm  v10.8.2
+64 verbose exit 0
+65 info ok

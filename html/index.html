@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hệ thống IOT - Đặng Phương Nam</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 30px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+    h1 { margin-bottom: 20px; font-size: 2rem; }
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    input { background: rgba(255,255,255,0.2); color: #fff; }
+    input::placeholder { color: #ddd; }
+    button {
+      background: #00d2ff;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover { background: #00aaff; }
+    #dashboard { display: none; }
+    .sensor {
+      background: rgba(255,255,255,0.15);
+      margin: 12px 0;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      text-align: left;
+    }
+    .sensor:hover { background: rgba(255,255,255,0.3); transform: translateY(-2px); }
+    #chart { margin-top: 20px; }
+    .logout {
+      margin-top: 20px;
+      background: #ff6b6b;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .logout:hover { background: #ff5252; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- LOGIN FORM -->
+    <div id="loginForm">
+      <h1>Đăng nhập IOT</h1>
+      <input type="text" id="username" placeholder="Tên đăng nhập" value="nam"/>
+      <input type="password" id="password" placeholder="Mật khẩu" value="nam123"/>
+      <button onclick="login()">Đăng nhập</button>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div id="dashboard">
+      <h1>Chào mừng, <span id="user">Nam</span>!</h1>
+      <div id="sensors"></div>
+      <div id="chart"></div>
+      <div class="logout" onclick="logout()">Đăng xuất</div>
+    </div>
+  </div>
+
+  <script>
+    // === BIẾN TOÀN CỤC ===
+    const API_URL = '/api';
+
+    // === ĐĂNG NHẬP ===
+    function login() {
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value;
+
+      if (!username || !password) {
+        alert('Vui lòng nhập đầy đủ!');
+        return;
+      }
+
+      fetch(`${API_URL}/login`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password })
+      })
+      .then(r => r.json())
+      .then(data => {
+        if (data.token) {
+          localStorage.setItem('token', data.token);
+          document.getElementById('loginForm').style.display = 'none';
+          document.getElementById('dashboard').style.display = 'block';
+          document.getElementById('user').textContent = username;
+          loadSensors();
+        } else {
+          alert(data.error || 'Đăng nhập thất bại!');
+        }
+      })
+      .catch(() => alert('Lỗi kết nối server!'));
+    }
+
+    // === LOAD CẢM BIẾN ===
+    function loadSensors() {
+      const token = localStorage.getItem('token');
+      if (!token) {
+        alert('Vui lòng đăng nhập!');
+        return logout();
+      }
+
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 10000);
+
+      fetch(`${API_URL}/sensors`, {
+        method: 'GET',
+        headers: {
+          'Authorization': 'Bearer ' + token,
+          'Cache-Control': 'no-cache',
+          'Pragma': 'no-cache'
+        },
+        signal: controller.signal
+      })
+      .then(r => {
+        clearTimeout(timeoutId);
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        return r.json();
+      })
+      .then(data => {
+        if (data.success) {
+          const container = document.getElementById('sensors');
+          container.innerHTML = '';
+          data.data.forEach(s => {
+            const div = document.createElement('div');
+            div.className = 'sensor';
+            div.innerHTML = `<strong>${s.name}:</strong> ${s.value} ${s.unit}`;
+            div.onclick = () => showChart(s.id, s.name);
+            container.appendChild(div);
+          });
+        } else {
+          alert(data.error || 'Lỗi dữ liệu');
+        }
+      })
+      .catch(err => {
+        clearTimeout(timeoutId);
+        console.error('Lỗi load sensors:', err);
+        alert('Không thể kết nối đến server. Vui lòng thử lại.');
+      });
+    }
+
+    // === HIỂN THỊ BIỂU ĐỒ (TẠM DỪNG) ===
+    function showChart(sensorId, name) {
+      const chartDiv = document.getElementById('chart');
+      chartDiv.innerHTML = `
+        <h3>Biểu đồ: ${name}</h3>
+        <p style="color:#aaa;font-style:italic;">
+          Tính năng Grafana sẽ được bật sau. Hiện tại đang hiển thị dữ liệu tĩnh.
+        </p>
+      `;
+    }
+
+    // === ĐĂNG XUẤT ===
+    function logout() {
+      localStorage.removeItem('token');
+      document.getElementById('loginForm').style.display = 'block';
+      document.getElementById('dashboard').style.display = 'none';
+      document.getElementById('sensors').innerHTML = '';
+      document.getElementById('chart').innerHTML = '';
+    }
+
+    // === TỰ ĐỘNG LOAD KHI MỞ TRANG (NẾU ĐÃ LOGIN) ===
+    window.onload = () => {
+      if (localStorage.getItem('token')) {
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('dashboard').style.display = 'block';
+        loadSensors();
+      }
+    };
+  </script>
+</body>
+</html>

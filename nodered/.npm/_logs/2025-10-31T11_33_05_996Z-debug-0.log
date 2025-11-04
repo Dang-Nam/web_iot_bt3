@@ -1,0 +1,219 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.19.5
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/.npmrc
+5 silly config load:file:/usr/src/node-red/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install node-red-contrib-mssql@0.0.7
+8 verbose argv "install" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "--save-prefix" "~" "--omit" "dev" "--engine-strict" "node-red-contrib-mssql@0.0.7"
+9 verbose logfile logs-max:10 dir:/data/.npm/_logs/2025-10-31T11_33_05_996Z-
+10 verbose logfile /data/.npm/_logs/2025-10-31T11_33_05_996Z-debug-0.log
+11 silly packumentCache heap:1939603456 maxSize:484900864 maxEntrySize:242450432
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 silly fetch manifest node-red-contrib-mssql@0.0.7
+15 silly packumentCache full:https://registry.npmjs.org/node-red-contrib-mssql cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-mssql 989ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/node-red-contrib-mssql set size:undefined disposed:false
+18 silly placeDep ROOT node-red-contrib-mssql@0.0.7 OK for: node-red-project@0.0.1 want: 0.0.7
+19 silly fetch manifest mssql@>=3.0.1 <4.0.0
+20 silly packumentCache full:https://registry.npmjs.org/mssql cache-miss
+21 silly fetch manifest mustache@latest
+22 silly packumentCache full:https://registry.npmjs.org/mustache cache-miss
+23 http fetch GET 200 https://registry.npmjs.org/mssql 156ms (cache miss)
+24 silly packumentCache full:https://registry.npmjs.org/mssql set size:undefined disposed:false
+25 http fetch GET 200 https://registry.npmjs.org/mustache 713ms (cache miss)
+26 silly packumentCache full:https://registry.npmjs.org/mustache set size:undefined disposed:false
+27 silly placeDep ROOT mssql@3.3.0 OK for: node-red-contrib-mssql@0.0.7 want: >=3.0.1 <4.0.0
+28 silly placeDep ROOT mustache@4.2.0 OK for: node-red-contrib-mssql@0.0.7 want: latest
+29 silly fetch manifest promise@^7.0.1
+30 silly packumentCache full:https://registry.npmjs.org/promise cache-miss
+31 silly fetch manifest tedious@~1.14.0
+32 silly packumentCache full:https://registry.npmjs.org/tedious cache-miss
+33 silly fetch manifest generic-pool@^2.2.0
+34 silly packumentCache full:https://registry.npmjs.org/generic-pool cache-miss
+35 http fetch GET 200 https://registry.npmjs.org/generic-pool 137ms (cache miss)
+36 silly packumentCache full:https://registry.npmjs.org/generic-pool set size:undefined disposed:false
+37 http fetch GET 200 https://registry.npmjs.org/promise 147ms (cache miss)
+38 silly packumentCache full:https://registry.npmjs.org/promise set size:undefined disposed:false
+39 http fetch GET 200 https://registry.npmjs.org/tedious 587ms (cache miss)
+40 silly packumentCache full:https://registry.npmjs.org/tedious set size:undefined disposed:false
+41 silly placeDep ROOT generic-pool@2.5.4 OK for: mssql@3.3.0 want: ^2.2.0
+42 silly placeDep ROOT promise@7.3.1 OK for: mssql@3.3.0 want: ^7.0.1
+43 silly placeDep ROOT tedious@1.14.0 OK for: mssql@3.3.0 want: ~1.14.0
+44 silly fetch manifest asap@~2.0.3
+45 silly packumentCache full:https://registry.npmjs.org/asap cache-miss
+46 silly fetch manifest bl@^1.0.0
+47 silly packumentCache full:https://registry.npmjs.org/bl cache-miss
+48 silly fetch manifest semver@^5.1.0
+49 silly packumentCache full:https://registry.npmjs.org/semver cache-miss
+50 silly fetch manifest sprintf@0.1.5
+51 silly packumentCache full:https://registry.npmjs.org/sprintf cache-miss
+52 silly fetch manifest big-number@0.3.1
+53 silly packumentCache full:https://registry.npmjs.org/big-number cache-miss
+54 silly fetch manifest iconv-lite@^0.4.11
+55 silly packumentCache full:https://registry.npmjs.org/iconv-lite cache-miss
+56 silly fetch manifest babel-runtime@^5.8.19
+57 silly packumentCache full:https://registry.npmjs.org/babel-runtime cache-miss
+58 silly fetch manifest readable-stream@^2.0.2
+59 silly packumentCache full:https://registry.npmjs.org/readable-stream cache-miss
+60 http fetch GET 200 https://registry.npmjs.org/iconv-lite 51ms (cache hit)
+61 silly packumentCache full:https://registry.npmjs.org/iconv-lite set size:118890 disposed:false
+62 http fetch GET 200 https://registry.npmjs.org/asap 162ms (cache miss)
+63 silly packumentCache full:https://registry.npmjs.org/asap set size:undefined disposed:false
+64 http fetch GET 200 https://registry.npmjs.org/semver 163ms (cache miss)
+65 silly packumentCache full:https://registry.npmjs.org/semver set size:undefined disposed:false
+66 http fetch GET 200 https://registry.npmjs.org/bl 421ms (cache miss)
+67 silly packumentCache full:https://registry.npmjs.org/bl set size:undefined disposed:false
+68 http fetch GET 200 https://registry.npmjs.org/readable-stream 430ms (cache miss)
+69 silly packumentCache full:https://registry.npmjs.org/readable-stream set size:undefined disposed:false
+70 http fetch GET 200 https://registry.npmjs.org/babel-runtime 440ms (cache miss)
+71 silly packumentCache full:https://registry.npmjs.org/babel-runtime set size:undefined disposed:false
+72 http fetch GET 200 https://registry.npmjs.org/sprintf 801ms (cache miss)
+73 silly packumentCache full:https://registry.npmjs.org/sprintf set size:undefined disposed:false
+74 http fetch GET 200 https://registry.npmjs.org/big-number 962ms (cache miss)
+75 silly packumentCache full:https://registry.npmjs.org/big-number set size:undefined disposed:false
+76 silly placeDep ROOT asap@2.0.6 OK for: promise@7.3.1 want: ~2.0.3
+77 silly placeDep ROOT babel-runtime@5.8.38 OK for: tedious@1.14.0 want: ^5.8.19
+78 silly placeDep ROOT big-number@0.3.1 OK for: tedious@1.14.0 want: 0.3.1
+79 silly placeDep ROOT bl@1.2.3 OK for: tedious@1.14.0 want: ^1.0.0
+80 silly placeDep node_modules/tedious iconv-lite@0.4.24 OK for: tedious@1.14.0 want: ^0.4.11
+81 silly placeDep ROOT readable-stream@2.3.8 OK for: tedious@1.14.0 want: ^2.0.2
+82 silly placeDep ROOT semver@5.7.2 OK for: tedious@1.14.0 want: ^5.1.0
+83 silly placeDep ROOT sprintf@0.1.5 OK for: tedious@1.14.0 want: 0.1.5
+84 silly fetch manifest core-js@^1.0.0
+85 silly packumentCache full:https://registry.npmjs.org/core-js cache-miss
+86 silly fetch manifest safe-buffer@^5.1.1
+87 silly packumentCache full:https://registry.npmjs.org/safe-buffer cache-miss
+88 silly fetch manifest readable-stream@^2.3.5
+89 silly packumentCache full:https://registry.npmjs.org/readable-stream cache-miss
+90 silly fetch manifest isarray@~1.0.0
+91 silly packumentCache full:https://registry.npmjs.org/isarray cache-miss
+92 silly fetch manifest inherits@~2.0.3
+93 silly packumentCache full:https://registry.npmjs.org/inherits cache-miss
+94 silly fetch manifest safe-buffer@~5.1.1
+95 silly packumentCache full:https://registry.npmjs.org/safe-buffer cache-miss
+96 silly fetch manifest core-util-is@~1.0.0
+97 silly packumentCache full:https://registry.npmjs.org/core-util-is cache-miss
+98 silly fetch manifest string_decoder@~1.1.1
+99 silly packumentCache full:https://registry.npmjs.org/string_decoder cache-miss
+100 silly fetch manifest util-deprecate@~1.0.1
+101 silly packumentCache full:https://registry.npmjs.org/util-deprecate cache-miss
+102 silly fetch manifest process-nextick-args@~2.0.0
+103 silly packumentCache full:https://registry.npmjs.org/process-nextick-args cache-miss
+104 http fetch GET 200 https://registry.npmjs.org/readable-stream 44ms (cache hit)
+105 silly packumentCache full:https://registry.npmjs.org/readable-stream set size:261096 disposed:false
+106 http fetch GET 200 https://registry.npmjs.org/safe-buffer 154ms (cache miss)
+107 silly packumentCache full:https://registry.npmjs.org/safe-buffer set size:undefined disposed:false
+108 http fetch GET 200 https://registry.npmjs.org/safe-buffer 153ms (cache miss)
+109 silly packumentCache full:https://registry.npmjs.org/safe-buffer set size:undefined disposed:false
+110 http fetch GET 200 https://registry.npmjs.org/util-deprecate 153ms (cache miss)
+111 silly packumentCache full:https://registry.npmjs.org/util-deprecate set size:undefined disposed:false
+112 http fetch GET 200 https://registry.npmjs.org/isarray 174ms (cache miss)
+113 silly packumentCache full:https://registry.npmjs.org/isarray set size:undefined disposed:false
+114 http fetch GET 200 https://registry.npmjs.org/string_decoder 174ms (cache miss)
+115 silly packumentCache full:https://registry.npmjs.org/string_decoder set size:undefined disposed:false
+116 http fetch GET 200 https://registry.npmjs.org/inherits 181ms (cache miss)
+117 silly packumentCache full:https://registry.npmjs.org/inherits set size:undefined disposed:false
+118 http fetch GET 200 https://registry.npmjs.org/core-js 200ms (cache miss)
+119 silly packumentCache full:https://registry.npmjs.org/core-js set size:undefined disposed:false
+120 http fetch GET 200 https://registry.npmjs.org/process-nextick-args 390ms (cache miss)
+121 silly packumentCache full:https://registry.npmjs.org/process-nextick-args set size:undefined disposed:false
+122 http fetch GET 200 https://registry.npmjs.org/core-util-is 498ms (cache miss)
+123 silly packumentCache full:https://registry.npmjs.org/core-util-is set size:undefined disposed:false
+124 silly placeDep ROOT core-js@1.2.7 OK for: babel-runtime@5.8.38 want: ^1.0.0
+125 silly placeDep ROOT safe-buffer@5.2.1 OK for: bl@1.2.3 want: ^5.1.1
+126 silly placeDep ROOT core-util-is@1.0.3 OK for: readable-stream@2.3.8 want: ~1.0.0
+127 silly placeDep ROOT inherits@2.0.4 OK for: readable-stream@2.3.8 want: ~2.0.3
+128 silly placeDep ROOT isarray@1.0.0 OK for: readable-stream@2.3.8 want: ~1.0.0
+129 silly placeDep ROOT process-nextick-args@2.0.1 OK for: readable-stream@2.3.8 want: ~2.0.0
+130 silly placeDep node_modules/readable-stream safe-buffer@5.1.2 OK for: readable-stream@2.3.8 want: ~5.1.1
+131 silly placeDep ROOT string_decoder@1.1.1 OK for: readable-stream@2.3.8 want: ~1.1.1
+132 silly placeDep ROOT util-deprecate@1.0.2 OK for: readable-stream@2.3.8 want: ~1.0.1
+133 silly fetch manifest safe-buffer@~5.1.0
+134 silly packumentCache full:https://registry.npmjs.org/safe-buffer cache-miss
+135 http fetch GET 200 https://registry.npmjs.org/safe-buffer 37ms (cache hit)
+136 silly packumentCache full:https://registry.npmjs.org/safe-buffer set size:41183 disposed:false
+137 silly placeDep node_modules/string_decoder safe-buffer@5.1.2 OK for: string_decoder@1.1.1 want: ~5.1.0
+138 silly reify moves {}
+139 silly tarball no local data for inherits@https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz. Extracting by manifest.
+140 silly tarball no local data for isarray@https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz. Extracting by manifest.
+141 silly tarball no local data for string_decoder@https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz. Extracting by manifest.
+142 silly tarball no local data for util-deprecate@https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz. Extracting by manifest.
+143 silly tarball no local data for process-nextick-args@https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz. Extracting by manifest.
+144 silly tarball no local data for core-util-is@https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz. Extracting by manifest.
+145 silly tarball no local data for safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz. Extracting by manifest.
+146 silly tarball no local data for core-js@https://registry.npmjs.org/core-js/-/core-js-1.2.7.tgz. Extracting by manifest.
+147 silly tarball no local data for semver@https://registry.npmjs.org/semver/-/semver-5.7.2.tgz. Extracting by manifest.
+148 silly tarball no local data for big-number@https://registry.npmjs.org/big-number/-/big-number-0.3.1.tgz. Extracting by manifest.
+149 silly tarball no local data for readable-stream@https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.8.tgz. Extracting by manifest.
+150 silly tarball no local data for bl@https://registry.npmjs.org/bl/-/bl-1.2.3.tgz. Extracting by manifest.
+151 silly tarball no local data for sprintf@https://registry.npmjs.org/sprintf/-/sprintf-0.1.5.tgz. Extracting by manifest.
+152 silly tarball no local data for tedious@https://registry.npmjs.org/tedious/-/tedious-1.14.0.tgz. Extracting by manifest.
+153 silly tarball no local data for promise@https://registry.npmjs.org/promise/-/promise-7.3.1.tgz. Extracting by manifest.
+154 silly tarball no local data for generic-pool@https://registry.npmjs.org/generic-pool/-/generic-pool-2.5.4.tgz. Extracting by manifest.
+155 silly tarball no local data for asap@https://registry.npmjs.org/asap/-/asap-2.0.6.tgz. Extracting by manifest.
+156 silly tarball no local data for mustache@https://registry.npmjs.org/mustache/-/mustache-4.2.0.tgz. Extracting by manifest.
+157 silly tarball no local data for babel-runtime@https://registry.npmjs.org/babel-runtime/-/babel-runtime-5.8.38.tgz. Extracting by manifest.
+158 silly tarball no local data for mssql@https://registry.npmjs.org/mssql/-/mssql-3.3.0.tgz. Extracting by manifest.
+159 silly tarball no local data for node-red-contrib-mssql@https://registry.npmjs.org/node-red-contrib-mssql/-/node-red-contrib-mssql-0.0.7.tgz. Extracting by manifest.
+160 silly tarball no local data for safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz. Extracting by manifest.
+161 silly tarball no local data for safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz. Extracting by manifest.
+162 silly tarball no local data for iconv-lite@https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.24.tgz. Extracting by manifest.
+163 http fetch GET 200 https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz 542ms (cache miss)
+164 http fetch GET 200 https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz 557ms (cache miss)
+165 http fetch GET 200 https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz 560ms (cache miss)
+166 http fetch GET 200 https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz 560ms (cache miss)
+167 http fetch GET 200 https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz 564ms (cache miss)
+168 http fetch GET 200 https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz 586ms (cache miss)
+169 http fetch GET 200 https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz 610ms (cache miss)
+170 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-mssql/-/node-red-contrib-mssql-0.0.7.tgz 697ms (cache miss)
+171 http fetch GET 200 https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz 751ms (cache miss)
+172 http fetch GET 200 https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz 801ms (cache miss)
+173 http fetch GET 200 https://registry.npmjs.org/semver/-/semver-5.7.2.tgz 898ms (cache miss)
+174 http fetch GET 200 https://registry.npmjs.org/sprintf/-/sprintf-0.1.5.tgz 917ms (cache miss)
+175 warn deprecated sprintf@0.1.5: The sprintf package is deprecated in favor of sprintf-js.
+176 http fetch GET 200 https://registry.npmjs.org/asap/-/asap-2.0.6.tgz 944ms (cache miss)
+177 http fetch GET 200 https://registry.npmjs.org/big-number/-/big-number-0.3.1.tgz 953ms (cache miss)
+178 http fetch GET 200 https://registry.npmjs.org/bl/-/bl-1.2.3.tgz 1019ms (cache miss)
+179 http fetch GET 200 https://registry.npmjs.org/generic-pool/-/generic-pool-2.5.4.tgz 1073ms (cache miss)
+180 http fetch GET 200 https://registry.npmjs.org/mustache/-/mustache-4.2.0.tgz 1078ms (cache miss)
+181 http fetch GET 200 https://registry.npmjs.org/promise/-/promise-7.3.1.tgz 1347ms (cache miss)
+182 http fetch GET 200 https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.8.tgz 1422ms (cache miss)
+183 http fetch GET 200 https://registry.npmjs.org/mssql/-/mssql-3.3.0.tgz 1513ms (cache miss)
+184 http fetch GET 200 https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.24.tgz 1518ms (cache miss)
+185 http fetch GET 200 https://registry.npmjs.org/tedious/-/tedious-1.14.0.tgz 1801ms (cache miss)
+186 http fetch GET 200 https://registry.npmjs.org/babel-runtime/-/babel-runtime-5.8.38.tgz 2501ms (cache miss)
+187 http fetch GET 200 https://registry.npmjs.org/core-js/-/core-js-1.2.7.tgz 4004ms (cache miss)
+188 warn deprecated core-js@1.2.7: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+189 silly ADD node_modules/util-deprecate
+190 silly ADD node_modules/string_decoder
+191 silly ADD node_modules/string_decoder/node_modules/safe-buffer
+192 silly ADD node_modules/process-nextick-args
+193 silly ADD node_modules/isarray
+194 silly ADD node_modules/inherits
+195 silly ADD node_modules/core-util-is
+196 silly ADD node_modules/safe-buffer
+197 silly ADD node_modules/core-js
+198 silly ADD node_modules/sprintf
+199 silly ADD node_modules/semver
+200 silly ADD node_modules/readable-stream
+201 silly ADD node_modules/readable-stream/node_modules/safe-buffer
+202 silly ADD node_modules/bl
+203 silly ADD node_modules/big-number
+204 silly ADD node_modules/babel-runtime
+205 silly ADD node_modules/asap
+206 silly ADD node_modules/tedious
+207 silly ADD node_modules/tedious/node_modules/iconv-lite
+208 silly ADD node_modules/promise
+209 silly ADD node_modules/generic-pool
+210 silly ADD node_modules/mustache
+211 silly ADD node_modules/mssql
+212 silly ADD node_modules/node-red-contrib-mssql
+213 verbose cwd /data
+214 verbose os Linux 6.6.87.2-microsoft-standard-WSL2
+215 verbose node v20.19.5
+216 verbose npm  v10.8.2
+217 verbose exit 0
+218 info ok
