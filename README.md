@@ -125,3 +125,24 @@ test lại api
 giao diện đăng nhập
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/41ef72bb-268c-401e-82eb-f865fd35607a" />
 giao diện báo senser, đg tạm ngắt kết nối biểu đồ grafana, để test senser tĩnh trc ạ
+
+
+### KẾT LUẬN
+
+Dự án đã hoàn thiện một hệ thống IoT giám sát cảm biến chạy ổn định, triển khai thực tế, với đầy đủ các thành phần cốt lõi: Node-RED, MariaDB, Docker và web SPA.
+
+
+Node-RED là trái tim của hệ thống – nhận dữ liệu cảm biến, xử lý logic, phân luồng thông minh: cập nhật giá trị hiện tại vào MariaDB để web hiển thị real-time, đồng thời chuẩn bị sẵn sàng cho việc tích hợp InfluxDB lưu dữ liệu lịch sử.
+
+
+Web SPA (dangphuongnam.com) hoạt động mượt mà: login JWT, hiển thị 3 cảm biến, test API .
+
+
+Docker + WSL 2 giúp triển khai với lệnh docker-compose up -d, container nginx, nodered, mariadb chạy ổn định, dễ bảo trì và mở rộng.
+
+
+Tuy nhiên Grafana sau khi thực hiện cấu hình, vẫn đang gặp lỗi và chưa thể khắc phục và sử dụng ạ.
+
+
+
+### EM XIN CẢM ƠN THẦY VÀ CÁC BẠN ĐÃ XEM BÀI LÀM CỦA EM.
