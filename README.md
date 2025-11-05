@@ -5,7 +5,7 @@
 ### Tiến trình làm bài
 ### 1. Cài đặt môi trường: cài đặt Docker Desktop + WSL 2
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/253889ed-be3b-4ca6-970e-1ee126fcfb5b" />
-+ tải DOCKER DESKTOP
+tải DOCKER DESKTOP
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/809d267d-4f23-4524-9974-32e13909e757" />
 cài đặt DOCKER DESKTOP
 <img width="1606" height="961" alt="image" src="https://github.com/user-attachments/assets/f33c691c-8d8c-4a7c-9a47-514c99a7a872" />
