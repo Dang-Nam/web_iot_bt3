@@ -130,7 +130,7 @@ giao diện báo senser, đg tạm ngắt kết nối biểu đồ grafana, đ�
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/834dcaf3-3b7a-495f-90fd-03f1b342cbef" />
 Sau khi kiểm tra lại đề bài, 
-![Uploading image.png…]()
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5205d14c-0d9e-41f5-9a39-1519b65ede5c" />
 
 
 ### KẾT LUẬN
