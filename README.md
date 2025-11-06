@@ -126,12 +126,22 @@ giao diện đăng nhập
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/41ef72bb-268c-401e-82eb-f865fd35607a" />
 giao diện báo senser, đg tạm ngắt kết nối biểu đồ grafana, để test senser tĩnh trc ạ
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8391238d-2a95-4c7a-9e40-c608472f0593" />
 
+
+Sau khi kiểm tra lại đề bài, em đã cấu hình lại file nginx để có thể Nginx làm web-server
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/836472c0-6379-4b05-893d-ae1671ebfa09" />
+http://dangphuongnam.com/ đã oke từ trc theo đúng yêu cầu
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/834dcaf3-3b7a-495f-90fd-03f1b342cbef" />
-Sau khi kiểm tra lại đề bài, 
+ http://dangphuongnam.com/nodered
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5205d14c-0d9e-41f5-9a39-1519b65ede5c" />
+http://dangphuongnam.com/phpmyadmin
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/77dd4d4d-ea0c-4652-82f6-a99b79adb0d9" />
+Tuy nhiên dù đã thử cấu hình nginx nhưng em vẫn chưa thể truy cập http://dangphuongnam.com/grafana 
 
+
+hiện tại đã sắp đến dl nhưng hiện tại em vẫn đang mắc ở frafana và influxDB 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e4a529c1-fedb-45d1-bd76-6e43c10bad31" />
+vẫn đang làm đến giờ cuối cùng
 
 ### KẾT LUẬN
 
