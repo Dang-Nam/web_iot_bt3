@@ -143,7 +143,7 @@ Hiện tại đã sắp đến dl nhưng hiện tại em vẫn đang mắc ở f
 
 ### KẾT LUẬN
 
-Dự án đã hoàn thiện một hệ thống IoT giám sát cảm biến chạy ổn định, triển khai thực tế, với đầy đủ các thành phần cốt lõi: Node-RED, MariaDB, Docker và web SPA.
+Dự án đã phần nào hoàn thiện một hệ thống IoT giám sát cảm biến chạy ổn định, triển khai thực tế, với đầy đủ các thành phần cốt lõi: Node-RED, MariaDB, Docker và web SPA.
 
 
 Node-RED là trái tim của hệ thống – nhận dữ liệu cảm biến, xử lý logic, phân luồng thông minh: cập nhật giá trị hiện tại vào MariaDB để web hiển thị real-time, đồng thời chuẩn bị sẵn sàng cho việc tích hợp InfluxDB lưu dữ liệu lịch sử.
