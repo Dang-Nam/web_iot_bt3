@@ -139,9 +139,7 @@ http://dangphuongnam.com/phpmyadmin
 Tuy nhiên dù đã thử cấu hình nginx nhưng em vẫn chưa thể truy cập http://dangphuongnam.com/grafana 
 
 
-hiện tại đã sắp đến dl nhưng hiện tại em vẫn đang mắc ở frafana và influxDB 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e4a529c1-fedb-45d1-bd76-6e43c10bad31" />
-vẫn đang làm đến giờ cuối cùng
+Hiện tại đã sắp đến dl nhưng hiện tại em vẫn đang mắc ở frafana và influxDB 
 
 ### KẾT LUẬN
 
