@@ -126,7 +126,10 @@ giao diện đăng nhập
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/41ef72bb-268c-401e-82eb-f865fd35607a" />
 giao diện báo senser, đg tạm ngắt kết nối biểu đồ grafana, để test senser tĩnh trc ạ
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8391238d-2a95-4c7a-9e40-c608472f0593" />
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/834dcaf3-3b7a-495f-90fd-03f1b342cbef" />
+Sau khi kiểm tra lại đề bài, 
 ### KẾT LUẬN
 
 Dự án đã hoàn thiện một hệ thống IoT giám sát cảm biến chạy ổn định, triển khai thực tế, với đầy đủ các thành phần cốt lõi: Node-RED, MariaDB, Docker và web SPA.
