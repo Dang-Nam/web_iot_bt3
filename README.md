@@ -130,6 +130,9 @@ giao diện báo senser, đg tạm ngắt kết nối biểu đồ grafana, đ�
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/834dcaf3-3b7a-495f-90fd-03f1b342cbef" />
 Sau khi kiểm tra lại đề bài, 
+![Uploading image.png…]()
+
+
 ### KẾT LUẬN
 
 Dự án đã hoàn thiện một hệ thống IoT giám sát cảm biến chạy ổn định, triển khai thực tế, với đầy đủ các thành phần cốt lõi: Node-RED, MariaDB, Docker và web SPA.
